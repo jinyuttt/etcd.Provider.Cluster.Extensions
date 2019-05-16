@@ -5,7 +5,7 @@
     <Authors>jinyu成都</Authors>
     <Description>etcd扩展，定时刷新集群节点地址</Description>
     <PackageProjectUrl>https://github.com/jinyuttt/etcd.Provider.Cluster.Extensions.git</PackageProjectUrl>
-    <Version>1.1.0</Version>
+    <Version>1.1.1</Version>
   </PropertyGroup>
 
   <ItemGroup>
