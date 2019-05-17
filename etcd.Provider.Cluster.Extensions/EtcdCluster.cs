@@ -63,15 +63,15 @@ namespace etcd.Provider.Cluster.Extensions
 
         public EtcdCluster()
         {
-            readerWriter = new ReaderWriterLockSlim();
             Urls = new List<EtcdClientUrls>();
+            readerWriter = new ReaderWriterLockSlim();
             dic = new Dictionary<string, ClientMonitor>();
 
         }
 
        
 
-        public EtcdCluster(EtcdClient client)
+        public EtcdCluster(EtcdClient client):this()
         {
             _client = client;
             StartTimerFulsh();
@@ -82,7 +82,7 @@ namespace etcd.Provider.Cluster.Extensions
           
         }
 
-        public EtcdCluster(HostAndPort[] clients)
+        public EtcdCluster(HostAndPort[] clients):this()
         {
             this.clients = clients;
             Init();

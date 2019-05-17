@@ -10,7 +10,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Ocelot.Provider.Etcd.Extensions\etcd.Provider.Cluster.Extensions.csproj" />
+    <ProjectReference Include="..\etcd.Provider.Cluster.Extensions\etcd.Provider.Cluster.Extensions.csproj" />
   </ItemGroup>
 
 </Project>
