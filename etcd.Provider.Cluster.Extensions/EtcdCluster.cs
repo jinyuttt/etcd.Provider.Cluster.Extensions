@@ -24,6 +24,8 @@ using Etcdserverpb;
 using System.Collections.Concurrent;
 using System.Linq;
 using System.Threading;
+using System.Net.Http;
+using System.Security.Cryptography.X509Certificates;
 
 namespace etcd.Provider.Cluster.Extensions
 {
@@ -276,9 +278,28 @@ namespace etcd.Provider.Cluster.Extensions
         {
             try
             {
-                var c = new EtcdClient(host, port, username, password, caCert, clientCert, clientKey, publicRootCa);
-                c.Put("TestCon", "EtcdCluster");
-                return c;
+              
+                var handler = new HttpClientHandler
+                {
+                   
+
+                    ClientCertificateOptions = ClientCertificateOption.Automatic
+                };
+                X509Certificate2 x509pub = new(clientCert);//公钥
+                X509Certificate2 x509 = new(caCert, clientKey, X509KeyStorageFlags.Exportable);//证书
+                handler.ClientCertificates.Add(x509pub);
+                handler.ClientCertificates.Add(x509);
+                EtcdClient client = new EtcdClient(host,port,"etcd",handler);
+                var authRes = client.Authenticate(new Etcdserverpb.AuthenticateRequest()
+                {
+                    Name =username,
+                    Password = password,
+                });
+ 
+                client.Put("TestCon", "EtcdCluster", new Grpc.Core.Metadata() {
+        new Grpc.Core.Metadata.Entry("token",authRes.Token)
+    });
+                return client;
             }
             catch
             { return null; }

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>etcd.Provider.Cluster.Extensions</id>
+    <version>1.3.0</version>
+    <authors>jinyu成都</authors>
+    <license type="file">LICENSE</license>
+    <licenseUrl>https://aka.ms/deprecateLicenseUrl</licenseUrl>
+    <readme>README.md</readme>
+    <projectUrl>https://github.com/jinyuttt/etcd.Provider.Cluster.Extensions.git</projectUrl>
+    <description>etcd扩展，定时刷新集群节点地址</description>
+    <dependencies>
+      <group targetFramework="net6.0">
+        <dependency id="dotnet-etcd" version="6.0.1" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="E:\study\etcd\etcd.Provider.Cluster.Extensions\etcd.Provider.Cluster.Extensions\bin\Release\net6.0\etcd.Provider.Cluster.Extensions.dll" target="lib\net6.0\etcd.Provider.Cluster.Extensions.dll" />
+    <file src="E:\study\etcd\etcd.Provider.Cluster.Extensions\LICENSE" target="\LICENSE" />
+    <file src="E:\study\etcd\etcd.Provider.Cluster.Extensions\README.md" target="\README.md" />
+  </files>
+</package>

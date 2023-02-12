@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "dgSpecHash": "ZXnCu57YJaPhkOLLVFP9S2p3oKuNC7RwAMkOZDxtcPjV37qQGp/M0V8zpSTyjo3pXUew/l+8Su3/aeOm30rimA==",
+  "success": true,
+  "projectFilePath": "E:\\study\\etcd\\etcd.Provider.Cluster.Extensions\\etcd.Provider.Cluster.Extensions\\etcd.Provider.Cluster.Extensions.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\dell\\.nuget\\packages\\dotnet-etcd\\6.0.1\\dotnet-etcd.6.0.1.nupkg.sha512",
+    "C:\\Users\\dell\\.nuget\\packages\\google.protobuf\\3.21.9\\google.protobuf.3.21.9.nupkg.sha512",
+    "C:\\Users\\dell\\.nuget\\packages\\grpc.core.api\\2.49.0\\grpc.core.api.2.49.0.nupkg.sha512",
+    "C:\\Users\\dell\\.nuget\\packages\\grpc.net.client\\2.49.0\\grpc.net.client.2.49.0.nupkg.sha512",
+    "C:\\Users\\dell\\.nuget\\packages\\grpc.net.common\\2.49.0\\grpc.net.common.2.49.0.nupkg.sha512",
+    "C:\\Users\\dell\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\7.0.0\\microsoft.extensions.dependencyinjection.7.0.0.nupkg.sha512",
+    "C:\\Users\\dell\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\dell\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\3.0.3\\microsoft.extensions.logging.abstractions.3.0.3.nupkg.sha512",
+    "C:\\Users\\dell\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512"
+  ],
+  "logs": []
+}

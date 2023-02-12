@@ -1,0 +1,12 @@
+E:\study\etcd\etcd.Provider.Cluster.Extensions\etcd.Provider.Cluster.Extensions\bin\Debug\net6.0\etcd.Provider.Cluster.Extensions.deps.json
+E:\study\etcd\etcd.Provider.Cluster.Extensions\etcd.Provider.Cluster.Extensions\bin\Debug\net6.0\etcd.Provider.Cluster.Extensions.dll
+E:\study\etcd\etcd.Provider.Cluster.Extensions\etcd.Provider.Cluster.Extensions\bin\Debug\net6.0\etcd.Provider.Cluster.Extensions.pdb
+E:\study\etcd\etcd.Provider.Cluster.Extensions\etcd.Provider.Cluster.Extensions\obj\Debug\net6.0\etcd.Provider.Cluster.Extensions.csproj.AssemblyReference.cache
+E:\study\etcd\etcd.Provider.Cluster.Extensions\etcd.Provider.Cluster.Extensions\obj\Debug\net6.0\etcd.Provider.Cluster.Extensions.GeneratedMSBuildEditorConfig.editorconfig
+E:\study\etcd\etcd.Provider.Cluster.Extensions\etcd.Provider.Cluster.Extensions\obj\Debug\net6.0\etcd.Provider.Cluster.Extensions.AssemblyInfoInputs.cache
+E:\study\etcd\etcd.Provider.Cluster.Extensions\etcd.Provider.Cluster.Extensions\obj\Debug\net6.0\etcd.Provider.Cluster.Extensions.AssemblyInfo.cs
+E:\study\etcd\etcd.Provider.Cluster.Extensions\etcd.Provider.Cluster.Extensions\obj\Debug\net6.0\etcd.Provider.Cluster.Extensions.csproj.CoreCompileInputs.cache
+E:\study\etcd\etcd.Provider.Cluster.Extensions\etcd.Provider.Cluster.Extensions\obj\Debug\net6.0\etcd.Provider.Cluster.Extensions.dll
+E:\study\etcd\etcd.Provider.Cluster.Extensions\etcd.Provider.Cluster.Extensions\obj\Debug\net6.0\refint\etcd.Provider.Cluster.Extensions.dll
+E:\study\etcd\etcd.Provider.Cluster.Extensions\etcd.Provider.Cluster.Extensions\obj\Debug\net6.0\etcd.Provider.Cluster.Extensions.pdb
+E:\study\etcd\etcd.Provider.Cluster.Extensions\etcd.Provider.Cluster.Extensions\obj\Debug\net6.0\ref\etcd.Provider.Cluster.Extensions.dll

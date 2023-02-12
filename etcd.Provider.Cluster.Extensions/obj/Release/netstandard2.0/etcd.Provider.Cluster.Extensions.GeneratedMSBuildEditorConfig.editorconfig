@@ -1,0 +1,3 @@
+is_global = true
+build_property.RootNamespace = etcd.Provider.Cluster.Extensions
+build_property.ProjectDir = E:\study\etcd\etcd.Provider.Cluster.Extensions\etcd.Provider.Cluster.Extensions\

@@ -33,7 +33,7 @@ namespace etcd.Provider.Cluster.Extensions
         }
 
 
-        public static IEtcdCluster GetEtcdClient(this HostAndPort[] clients, string username = "", string password = "", string caCert = "", string clientCert = "", string clientKey = "", bool publicRootCa = false)
+        public static IEtcdCluster GetEtcdClient(this HostAndPort[] clients, string username = "etcduser", string password = "etcdsrv", string caCert = "", string clientCert = "", string clientKey = "", bool publicRootCa = false)
         {
             var cluster = new EtcdCluster(clients)
             {
