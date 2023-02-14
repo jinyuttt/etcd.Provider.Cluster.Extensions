@@ -35,12 +35,12 @@ namespace etcd.Provider.Cluster.Extensions
 * 创建日期：2019 
 * 更新时间 ：2019
 * ==============================================================================*/
-    public  class EtcdCluster : IEtcdCluster,IDisposable
+    public class EtcdCluster : IEtcdCluster, IDisposable
     {
         readonly List<EtcdClientUrls> Urls = null;
         private readonly Dictionary<string, ClientMonitor> dic = null;
-        private readonly ReaderWriterLockSlim readerWriter=null;
-        EtcdClient _client=null;
+        private readonly ReaderWriterLockSlim readerWriter = null;
+        EtcdClient _client = null;
         System.Timers.Timer timer = null;
         volatile int _index = 0;//地址获取，主从
         volatile int _Lindex = 0;//轮训
@@ -71,20 +71,20 @@ namespace etcd.Provider.Cluster.Extensions
 
         }
 
-       
 
-        public EtcdCluster(EtcdClient client):this()
+
+        public EtcdCluster(EtcdClient client) : this()
         {
             _client = client;
             StartTimerFulsh();
         }
 
-        public EtcdCluster(HostAndPort client):this(new HostAndPort[] { client })
+        public EtcdCluster(HostAndPort client) : this(new HostAndPort[] { client })
         {
-          
+
         }
 
-        public EtcdCluster(HostAndPort[] clients):this()
+        public EtcdCluster(HostAndPort[] clients) : this()
         {
             this.clients = clients;
             Init();
@@ -112,7 +112,7 @@ namespace etcd.Provider.Cluster.Extensions
                 }
                 StartTimerFulsh();
             });
-           
+
         }
 
         /// <summary>
@@ -135,8 +135,9 @@ namespace etcd.Provider.Cluster.Extensions
             MemberListResponse rsp;
             try
             {
-               rsp= _client.MemberList(new Etcdserverpb.MemberListRequest());
-            }catch
+                rsp = _client.MemberList(new Etcdserverpb.MemberListRequest());
+            }
+            catch
             {
                 GetClient();
                 return;//下次更新
@@ -150,10 +151,10 @@ namespace etcd.Provider.Cluster.Extensions
                     foreach (var c in kv.ClientURLs)
                     {
 
-                        string[] addr = c.Split(new char[] { ':','/' }, StringSplitOptions.RemoveEmptyEntries);
+                        string[] addr = c.Split(new char[] { ':', '/' }, StringSplitOptions.RemoveEmptyEntries);
                         if (addr.Length == 2)
                         {
-                            HostAndPort host = new HostAndPort() { Host = addr[0], Port = int.Parse(addr[1]), Flage=addr[0]+addr[1] };
+                            HostAndPort host = new HostAndPort() { Host = addr[0], Port = int.Parse(addr[1]), Flage = addr[0] + addr[1] };
                             etcd.Urls.Add(host);
                         }
                         else if (addr.Length == 3)
@@ -170,11 +171,11 @@ namespace etcd.Provider.Cluster.Extensions
                 //
                 if (ClusterUseType == ClusterUse.RoundRobin)
                 {
-                   
+
                     foreach (var c in Urls)
                     {
                         //每个客户端一个连接
-                        foreach(var addr in c.Urls)
+                        foreach (var addr in c.Urls)
                         {
                             ClientMonitor monitor = null;
                             readerWriter.EnterWriteLock();
@@ -210,16 +211,16 @@ namespace etcd.Provider.Cluster.Extensions
                             }
 
                         }
-                        
+
                     }
                 }
             }
         }
 
-       /// <summary>
-       /// 获取
-       /// </summary>
-       /// <returns></returns>
+        /// <summary>
+        /// 获取
+        /// </summary>
+        /// <returns></returns>
         public EtcdClient GetClient()
         {
             if (ClusterUseType == ClusterUse.Master_Slave)
@@ -245,7 +246,7 @@ namespace etcd.Provider.Cluster.Extensions
             }
             else
             {
-                if(readerWriter.TryEnterReadLock(100))
+                if (readerWriter.TryEnterReadLock(100))
                 {
                     try
                     {
@@ -262,7 +263,7 @@ namespace etcd.Provider.Cluster.Extensions
                     {
                         readerWriter.ExitReadLock();
                     }
-                
+
                 }
                 return null;
             }
@@ -274,14 +275,13 @@ namespace etcd.Provider.Cluster.Extensions
         /// <param name="host"></param>
         /// <param name="port"></param>
         /// <returns></returns>
-        private EtcdClient CreateClient(string host,int port)
+        private EtcdClient CreateClient(string host, int port)
         {
             try
             {
-              
+
                 var handler = new HttpClientHandler
                 {
-                   
 
                     ClientCertificateOptions = ClientCertificateOption.Automatic
                 };
@@ -289,13 +289,12 @@ namespace etcd.Provider.Cluster.Extensions
                 X509Certificate2 x509 = new(caCert, clientKey, X509KeyStorageFlags.Exportable);//证书
                 handler.ClientCertificates.Add(x509pub);
                 handler.ClientCertificates.Add(x509);
-                EtcdClient client = new EtcdClient(host,port,"etcd",handler);
+                EtcdClient client = new EtcdClient(host, port, "etcd", handler);
                 var authRes = client.Authenticate(new Etcdserverpb.AuthenticateRequest()
                 {
-                    Name =username,
+                    Name = username,
                     Password = password,
                 });
- 
                 client.Put("TestCon", "EtcdCluster", new Grpc.Core.Metadata() {
         new Grpc.Core.Metadata.Entry("token",authRes.Token)
     });
@@ -326,7 +325,7 @@ namespace etcd.Provider.Cluster.Extensions
             int start = index;
             lock (Urls)
             {
-                if(Urls.Count==0)
+                if (Urls.Count == 0)
                 {
                     return clients;
                 }

@@ -135,7 +135,7 @@
           "lib/netcoreapp2.1/_._": {}
         }
       },
-      "etcd.Provider.Cluster.Extensions/1.3.0": {
+      "etcd.Provider.Cluster.Extensions/1.3.1": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
@@ -364,7 +364,7 @@
         "version.txt"
       ]
     },
-    "etcd.Provider.Cluster.Extensions/1.3.0": {
+    "etcd.Provider.Cluster.Extensions/1.3.1": {
       "type": "project",
       "path": "../etcd.Provider.Cluster.Extensions/etcd.Provider.Cluster.Extensions.csproj",
       "msbuildProject": "../etcd.Provider.Cluster.Extensions/etcd.Provider.Cluster.Extensions.csproj"
@@ -372,7 +372,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "etcd.Provider.Cluster.Extensions >= 1.3.0"
+      "etcd.Provider.Cluster.Extensions >= 1.3.1"
     ]
   },
   "packageFolders": {

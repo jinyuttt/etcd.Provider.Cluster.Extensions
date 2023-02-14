@@ -3,11 +3,13 @@
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
     <Authors>jinyu成都</Authors>
-    <Description>etcd扩展，定时刷新集群节点地址</Description>
+    <Description>etcd客户端扩展，集群客户端刷新</Description>
     <PackageProjectUrl>https://github.com/jinyuttt/etcd.Provider.Cluster.Extensions.git</PackageProjectUrl>
-    <Version>1.3.0</Version>
+    <Version>1.3.1</Version>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageReleaseNotes>升级net6,升级etcd客户端</PackageReleaseNotes>
+    <RepositoryUrl>https://github.com/jinyuttt/etcd.Provider.Cluster.Extensions.git</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
