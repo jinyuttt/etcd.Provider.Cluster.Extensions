@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\study\\etcd\\etcd.Provider.Cluster.Extensions\\ConsoleApp1\\ConsoleApp1.csproj": {}
+    "E:\\study\\ff\\etcd.Provider.Cluster.Extensions\\ConsoleApp1\\ConsoleApp1.csproj": {}
   },
   "projects": {
-    "E:\\study\\etcd\\etcd.Provider.Cluster.Extensions\\ConsoleApp1\\ConsoleApp1.csproj": {
+    "E:\\study\\ff\\etcd.Provider.Cluster.Extensions\\ConsoleApp1\\ConsoleApp1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\study\\etcd\\etcd.Provider.Cluster.Extensions\\ConsoleApp1\\ConsoleApp1.csproj",
+        "projectUniqueName": "E:\\study\\ff\\etcd.Provider.Cluster.Extensions\\ConsoleApp1\\ConsoleApp1.csproj",
         "projectName": "ConsoleApp1",
-        "projectPath": "E:\\study\\etcd\\etcd.Provider.Cluster.Extensions\\ConsoleApp1\\ConsoleApp1.csproj",
+        "projectPath": "E:\\study\\ff\\etcd.Provider.Cluster.Extensions\\ConsoleApp1\\ConsoleApp1.csproj",
         "packagesPath": "C:\\Users\\dell\\.nuget\\packages\\",
-        "outputPath": "E:\\study\\etcd\\etcd.Provider.Cluster.Extensions\\ConsoleApp1\\obj\\",
+        "outputPath": "E:\\study\\ff\\etcd.Provider.Cluster.Extensions\\ConsoleApp1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -22,7 +22,7 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net6.0"
+          "net7.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -30,11 +30,11 @@
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net6.0": {
-            "targetAlias": "net6.0",
+          "net7.0": {
+            "targetAlias": "net7.0",
             "projectReferences": {
-              "E:\\study\\etcd\\etcd.Provider.Cluster.Extensions\\etcd.Provider.Cluster.Extensions\\etcd.Provider.Cluster.Extensions.csproj": {
-                "projectPath": "E:\\study\\etcd\\etcd.Provider.Cluster.Extensions\\etcd.Provider.Cluster.Extensions\\etcd.Provider.Cluster.Extensions.csproj"
+              "E:\\study\\ff\\etcd.Provider.Cluster.Extensions\\etcd.Provider.Cluster.Extensions\\etcd.Provider.Cluster.Extensions.csproj": {
+                "projectPath": "E:\\study\\ff\\etcd.Provider.Cluster.Extensions\\etcd.Provider.Cluster.Extensions\\etcd.Provider.Cluster.Extensions.csproj"
               }
             }
           }
@@ -46,8 +46,8 @@
         }
       },
       "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
+        "net7.0": {
+          "targetAlias": "net7.0",
           "imports": [
             "net461",
             "net462",
@@ -64,18 +64,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\study\\etcd\\etcd.Provider.Cluster.Extensions\\etcd.Provider.Cluster.Extensions\\etcd.Provider.Cluster.Extensions.csproj": {
-      "version": "1.3.1",
+    "E:\\study\\ff\\etcd.Provider.Cluster.Extensions\\etcd.Provider.Cluster.Extensions\\etcd.Provider.Cluster.Extensions.csproj": {
+      "version": "1.3.2",
       "restore": {
-        "projectUniqueName": "E:\\study\\etcd\\etcd.Provider.Cluster.Extensions\\etcd.Provider.Cluster.Extensions\\etcd.Provider.Cluster.Extensions.csproj",
+        "projectUniqueName": "E:\\study\\ff\\etcd.Provider.Cluster.Extensions\\etcd.Provider.Cluster.Extensions\\etcd.Provider.Cluster.Extensions.csproj",
         "projectName": "etcd.Provider.Cluster.Extensions",
-        "projectPath": "E:\\study\\etcd\\etcd.Provider.Cluster.Extensions\\etcd.Provider.Cluster.Extensions\\etcd.Provider.Cluster.Extensions.csproj",
+        "projectPath": "E:\\study\\ff\\etcd.Provider.Cluster.Extensions\\etcd.Provider.Cluster.Extensions\\etcd.Provider.Cluster.Extensions.csproj",
         "packagesPath": "C:\\Users\\dell\\.nuget\\packages\\",
-        "outputPath": "E:\\study\\etcd\\etcd.Provider.Cluster.Extensions\\etcd.Provider.Cluster.Extensions\\obj\\",
+        "outputPath": "E:\\study\\ff\\etcd.Provider.Cluster.Extensions\\etcd.Provider.Cluster.Extensions\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -86,7 +86,7 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net6.0"
+          "net7.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -94,8 +94,8 @@
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net6.0": {
-            "targetAlias": "net6.0",
+          "net7.0": {
+            "targetAlias": "net7.0",
             "projectReferences": {}
           }
         },
@@ -106,8 +106,8 @@
         }
       },
       "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
+        "net7.0": {
+          "targetAlias": "net7.0",
           "dependencies": {
             "dotnet-etcd": {
               "target": "Package",
@@ -130,7 +130,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }
